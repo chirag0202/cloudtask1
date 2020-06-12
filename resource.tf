@@ -1,6 +1,7 @@
 provider "aws" {
-  region     = "ap-south-1"
-  profile    = "chirag"
+  region                  = "ap-south-1"
+  shared_credentials_file = "/Users/KIIT/.aws/creds"
+  profile                 = "chirag"
 }
 
 resource "tls_private_key" "keypair" {
