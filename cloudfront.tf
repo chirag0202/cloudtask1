@@ -99,6 +99,6 @@ resource "aws_s3_bucket_object" "object" {
   bucket = aws_s3_bucket.bucket.bucket
   key    = "file.jpg"
   source = "image/file.jpg"
-
+  acl    = "public-read"
   etag = filemd5("image/file.jpg")
 }
