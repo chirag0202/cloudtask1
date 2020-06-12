@@ -1,6 +1,6 @@
 provider "aws" {
   region                  = "ap-south-1"
-  shared_credentials_file = "/Users/KIIT/.aws/creds"
+  shared_credentials_file = "C:/Users/KIIT/.aws/creds"
   profile                 = "chirag"
 }
 
