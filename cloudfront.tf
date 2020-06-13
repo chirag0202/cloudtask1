@@ -1,3 +1,9 @@
+provider "aws" {
+  region                  = "ap-south-1"
+  shared_credentials_file = "C:/Users/KIIT/.aws/credentials"
+  profile                 = "chirag"
+}
+
 resource "aws_s3_bucket" "bucket" {
   bucket = "imgsource1"
   acl    = "public-read"
